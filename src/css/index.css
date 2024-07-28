@@ -27,10 +27,10 @@ body {
 
 header section {
     background-color: var(--cor1);
-    display: flex; /* Adiciona esta linha */
+    display: flex;
     flex-direction: row;
-    align-items: center; /* Adiciona esta linha */
-    justify-content: center; /* Adiciona esta linha */
+    align-items: center;
+    justify-content: center;
     height: 100px;
 }
 
@@ -43,8 +43,8 @@ header section a {
 }
 
 header section span {
-    display: flex; /* Adiciona esta linha */
-    align-items: center; /* Adiciona esta linha */
+    display: flex;
+    align-items: center;
     margin-left: 50px;
 }
 
@@ -80,11 +80,11 @@ header nav {
     background-color: var(--cor1);
 }
 
-a#email{
+a#email {
     padding: 80px 20px 20px 20px;
 }
 
-img#emailImg{
+img#emailImg {
     width: 50px;
     filter: hue-rotate(0deg);
 }
@@ -101,7 +101,7 @@ header nav a:hover {
     background-color: var(--cor5);
     border-radius: 3px;
     margin: 3px 28px 18px -2px;
-    padding: 2px
+    padding: 2px;
 }
 
 main {
@@ -115,7 +115,7 @@ main {
     box-shadow: var(--box--shadow);
 }
 
-main h1{
+main h1 {
     text-align: center;
     font-family: var(--font1);
     color: var(--cor1);
@@ -128,7 +128,7 @@ main h2 {
     padding-left: 20px;
 }
 
-div.containerSpan{
+div.containerSpan {
     display: inline-block;
     background-color: var(--cor7);
     margin-top: 20px;
@@ -139,35 +139,188 @@ div.containerSpan{
     align-items: center;
 }
 
-div.containerSpan:hover{
+div.containerSpan:hover {
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.411);
 }
 
-main div img{
+main div img {
     width: 110px;
     margin-top: 20px;
     margin-left: 50px;
-    border-bottom:#000;
+    border-bottom: #000;
     cursor: pointer;
 }
 
-p.valorTotal{
+p.valorTotal {
     font-size: 1.2em;
     font-weight: bold;
     margin-left: 10px;
 }
 
-p.valorParcelado{
+p.valorParcelado {
     padding-top: 3px;
     font-size: 0.8em;
     margin-left: 10px;
 }
 
-p.DescricaoDivs{
+p.DescricaoDivs {
     padding-top: 3px;
     font-size: 0.8em;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
+@media (max-width: 720px) {
 
+    * {
+        padding: 0;
+        margin: 0;
+    }
 
+    body {
+        background-color: var(--cor2);
+    }
+
+    header section {
+        background-color: var(--cor1);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
+    header section a {
+        cursor: pointer;
+        height: 34px;
+        max-height: 34px;
+        max-width: 86px;
+        margin-top: -75px;
+    }
+
+    header section span {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    header section span input {
+        border: none;
+        width: 200px;
+        height: 40px;
+        background-color: var(--cor2);
+        border-radius: 4px 0px 0px 4px;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    header section span input:focus-visible {
+        outline: none;
+    }
+
+    header section span img {
+        background-color: var(--cor2);
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor1);
+    }
+
+    a#email {
+        padding: 80px 20px 20px 20px;
+    }
+
+    img#emailImg {
+        width: 50px;
+        filter: hue-rotate(0deg);
+    }
+
+    header nav a {
+        color: var(--cor2);
+        font-size: 1.5em;
+        font-family: var(--font1);
+        padding: 5px 30px 20px 0px;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        background-color: var(--cor5);
+        border-radius: 3px;
+        margin: 3px 28px 18px -2px;
+        padding: 2px;
+    }
+
+    main {
+        padding: 20px;
+        min-width: 260px;
+        max-width: 1200px;
+        margin-bottom: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: auto;
+        box-shadow: var(--box--shadow);
+    }
+
+    main h1 {
+        text-align: center;
+        font-family: var(--font1);
+        color: var(--cor1);
+        padding-top: 20px;
+    }
+
+    main h2 {
+        color: var(--cor9);
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    div.containerSpan {
+        display: inline-block;
+        background-color: var(--cor7);
+        margin-top: 15px;
+        margin-left: 15px;
+        border-radius: 3px;
+        width: 175px;
+        height: 255px;
+        align-items: center;
+    }
+
+    div.containerSpan:hover {
+        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.411);
+    }
+
+    main div img {
+        width: 110px;
+        margin-top: 20px;
+        margin-left: 50px;
+        border-bottom: #000;
+        cursor: pointer;
+    }
+
+    p.valorTotal {
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    p.valorParcelado {
+        padding-top: 3px;
+        font-size: 0.7em;
+        margin-left: 10px;
+    }
+
+    p.DescricaoDivs {
+        padding-top: 3px;
+        font-size: 0.7em;
+        margin-left: 10px;
+    }
+}

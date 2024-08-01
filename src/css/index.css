@@ -137,9 +137,17 @@ div.containerSpan {
     flex-shrink: 0;
 }
 
+div.containerSpanLast{
+    background-color: var(--cor2);
+}
+
 
 div.containerSpan:hover {
     box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.411), -3px -4px 6px rgb(255, 255, 255);
+}
+
+div.containerSpanLast:hover{
+    box-shadow: 0px 0px 0px 0px;
 }
 
 main div img {
